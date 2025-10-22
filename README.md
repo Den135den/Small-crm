@@ -21,6 +21,13 @@
   <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
   [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
+## BUILD PROJECT
+
+1.You need to change .env file data USER_EMAIL and USER_PASS (on your own)
+2.Docker startup: docker-compose up
+3.Database login: docker exec -it postgres_local psql -U postgres -d rabbitMQ
+4.You change the administrator email address in the database
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
