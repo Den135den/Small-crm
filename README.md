@@ -28,6 +28,26 @@
 3.Database login: docker exec -it postgres_local psql -U postgres -d rabbitMQ
 4.You change the administrator email address in the database
 
+## 🚀 Build Project
+
+### 🧩 1. Configure Environment Variables
+Edit the `.env` file and set your own credentials:
+```env
+USER_EMAIL=your_email@example.com
+USER_PASS=your_password
+
+Start Docker Containers
+$ docker-compose up --build
+
+Access the Database
+$ docker exec -it postgres_local psql -U postgres -d rabbitMQ
+
+Update Admin Email
+UPDATE users SET email = 'your_email@example.com' WHERE role = 'admin';
+
+All path to provide jwt!!!!
+
+
 ## Description
 
 [Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
