@@ -47,6 +47,9 @@ UPDATE users SET email = 'your_email@example.com' WHERE role = 'admin';
 
 All path to provide jwt!!!!
 
+Swagger documentation
+http://localhost:3000/api-docs#
+
 
 ## Description
 
